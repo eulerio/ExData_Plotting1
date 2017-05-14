@@ -1,5 +1,5 @@
 plot1 <- function(){
-	#download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",destfile="./temp.zip")
+	download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",destfile="./temp.zip")
 
 	unzip("temp.zip")
 	data <- read.table("household_power_consumption.txt", header=TRUE,sep=";")
